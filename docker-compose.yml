@@ -1,0 +1,17 @@
+version: '2'
+networks:
+  arjsexporter_net:
+    ipam:
+      config:
+        - subnet: 172.32.1.0/24
+services:
+  was:
+    image: arjsexporter_apiserver:latest #image명
+    container_name: arjsexporter_apiserver #image Container명
+    ports:
+      - '9999:9999'
+    networks:
+      arjsexporter_net:
+        ipv4_address: 172.32.1.2
+    restart: always
+

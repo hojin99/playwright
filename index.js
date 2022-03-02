@@ -1,19 +1,7 @@
 const chromium = require('playwright').chromium;
 const fs = require('fs');
-const node_static = require('node-static');
-const http = require('http');
-const path = require('path');
 
 console.log('start');
-
-// 테스트를 위해 자체 웹서버 실행 / 실제는 spring boot 기반에서 static service 제공 필요
-// console.log('create server');
-// var file = new node_static.Server(path.resolve(__dirname, "resources"));
-// http
-//   .createServer(function (req, res) {
-//     file.serve(req, res);
-//   })
-//   .listen(9998);
 
 (async () => {
   // headless browser 실행
