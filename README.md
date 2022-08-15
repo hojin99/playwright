@@ -30,11 +30,14 @@
 
 ## 실행 (Docker in WSL2)
 
+* `./Dockerbuild.sh` 실행해서 docker 이미지 빌드  
+
 * 컨테이너 실행 (static 서버 실행 포함)  
 `docker-compose up -d`  
 
 * arjs 보고서 export  
 `docker -it 컨테이너아이디 bash`  
+[containter] `node index.js`  
 
 * 컨테이너 종료 및 삭제  
 `docker-compose rm -fsv` 
